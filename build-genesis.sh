@@ -77,5 +77,4 @@ done
 starsd collect-gentxs
 starsd validate-genesis
 
-cp ~/.starsd/config/genesis.json $GENTXS
-jq -S -f normalize.jq  ~/.starsd/config/genesis.json > $GENTXS/sorted_genesis.json
+jq -S -f normalize.jq  ~/.starsd/config/genesis.json > $GENTXS/genesis.json
